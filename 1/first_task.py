@@ -1,6 +1,4 @@
-# Open the file in read mode
 with open('input', 'r') as file:
-    # Read each line in the file
     left=[]
     right=[]
     for line in file:
@@ -13,4 +11,7 @@ with open('input', 'r') as file:
     for i in range(0, 1000):
         distance = abs(left[i] - right[i])
         total_distance += distance
-    print(total_distance)
+
+    print(f"First task: {total_distance}")
+
+    
