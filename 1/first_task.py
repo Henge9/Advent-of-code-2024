@@ -14,4 +14,9 @@ with open('input', 'r') as file:
 
     print(f"First task: {total_distance}")
 
-    
+    similarity_score = 0
+    for row in left:
+        similarity_score += right.count(row) * row
+        print(f"{right.count(row)}  {similarity_score}")
+
+    print(f"Second task: {similarity_score}")
